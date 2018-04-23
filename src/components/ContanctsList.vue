@@ -6,8 +6,8 @@
                 <th>Last Name</th>
                 <th>Email</th>
            </thead>
-           <tbody  v-for="(contact,key) in contacts" :key="key" >
-           <tr>
+           <tbody>
+           <tr v-for="(contact,key) in contacts" :key="key" v-if="contact.firstName === 'John'">
                <td>
                    {{contact.firstName}}
                </td>
